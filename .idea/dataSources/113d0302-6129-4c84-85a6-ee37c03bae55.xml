@@ -1,0 +1,36 @@
+<dataSource name="MySQL - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="demo">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="demonstrate" />
+    <schema id="3" name="information_schema" />
+    <schema id="4" name="mysql" />
+    <schema id="5" name="performance_schema" />
+    <schema id="6" name="test" />
+    <table id="7" parent="1" name="student">
+      <comment>Ñ§Éú±í</comment>
+    </table>
+    <column id="8" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="9" parent="7" name="number">
+      <data-type>varchar(4)|0</data-type>
+    </column>
+    <column id="10" parent="7" name="name">
+      <data-type>varchar(8)|0</data-type>
+    </column>
+    <column id="11" parent="7" name="age">
+      <data-type>int(3)|0</data-type>
+    </column>
+    <column id="12" parent="7" name="height">
+      <data-type>double(3,2)|0</data-type>
+    </column>
+    <key id="13" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
